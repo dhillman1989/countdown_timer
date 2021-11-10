@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Launch countdown timer</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body class="flex flex-col flex-start-top">
+    <h1 class="heading center text-white text-medium text-heavy uppercase" style="margin-top: 25vh">We're launching soon</h1>
+
+    <div class="flex flip-container">
+        <div class="flex flex-col">
+            <div class="flip text-large text-red text-heavy" id="day">08</div>
+            <span class="text-small text-grey uppercase">Days</span>
+        </div>
+        <div class="flex flex-col">
+            <div class="flip text-large text-red text-heavy" id="hour">12</div>
+            <span class="text-small text-grey uppercase">Hours</span>
+        </div>
+        <div class="flex flex-col">
+            <div class="flip text-large text-red text-heavy" id="min">02</div>
+            <span class="text-small text-grey uppercase">Minutes</span>
+        </div>
+        <div class="flex flex-col">
+            <div class="flip text-large text-red text-heavy" id="sec">30</div>
+            <span class="text-small text-grey uppercase">Seconds</span>
+        </div>
+    </div>
+
+
+    <div class="social flex flex-row">
+        <a href="#"><img src="./images/icon-facebook.svg" alt="facebook"></a>
+        <a href="#"><img src="./images/icon-instagram.svg" alt="instagram"></a>
+        <a href="#"> <img src="./images/icon-pinterest.svg" alt="pinterest"></a>
+    </div>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>. -->
+    </div>
+</body>
+
+<script src="./js/script.js"></script>
+
+</html>

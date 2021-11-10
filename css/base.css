@@ -1,0 +1,169 @@
+:root {
+  font-size: 14px;
+}
+
+/*RESET*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MAIN */
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Red Hat Text', sans-serif;
+  background-color: #1e1f29;
+  background-image: url(../images/pattern-hills.svg), url(../images/bg-stars.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right, top;
+  background-size: 250%, cover;
+}
+
+/*FONTS AND TEXT */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/*font colors*/
+.text-red {
+  color: #fb6087;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-grey {
+  color: #8486a9;
+}
+
+/*font sizes*/
+.text-small {
+  font-size: 0.8rem;
+}
+
+.text-medium {
+  font-size: 2rem;
+}
+
+.text-large {
+  font-size: 2.5rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .text-small {
+    font-size: 1rem;
+  }
+  .text-medium {
+    font-size: 1.4rem;
+  }
+  .text-large {
+    font-size: 3.5rem;
+  }
+}
+
+/* FONT WEIGHTS */
+.text-heavy {
+  font-weight: 700;
+}
+
+/*LAYOUT*/
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-start-top {
+  justify-content: start;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*COMPONENTS*/
+/*-----FLIP CARD ------*/
+.flip-container {
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.flip {
+  margin: 0.5rem;
+  display: block;
+  width: 70px;
+  text-align: center;
+  position: relative;
+  padding: 1rem 1rem;
+}
+
+.flip::after {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #343650;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.flip::before {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  background-color: #3e4160;
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.heading {
+  display: inline-block;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.social {
+  margin: auto auto 0.5rem auto;
+}
+
+.social * {
+  margin: 1rem;
+}
+
+.social a:hover img {
+  filter: invert(42%) sepia(93%) saturate(600%) hue-rotate(-50deg) brightness(90%) contrast(100%);
+}
+
+@media only screen and (min-width: 800px) {
+  .flip-container {
+    justify-content: space-between;
+  }
+  .flip {
+    margin: 0 2rem 0.5rem;
+    display: block;
+    width: auto;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    padding: 1.2rem 1.2rem;
+  }
+}
