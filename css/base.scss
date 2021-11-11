@@ -36,6 +36,12 @@ body {
     background-size: 250%, cover;
 }
 
+@media only screen and(min-width: 800px) {
+    body {
+        background-size: 100%, cover;
+    }
+}
+
 
 /*FONTS AND TEXT */
 
@@ -132,6 +138,8 @@ body {
     text-align: center;
     position: relative;
     padding: 1rem 1rem;
+    border-bottom: 5px solid #000;
+    border-radius: 5px;
     &::after {
         content: "";
         position: absolute;
@@ -158,8 +166,8 @@ body {
 
 .heading {
     display: inline-block;
-    padding: 1rem;
-    margin-bottom: 2rem;
+    padding: 0;
+    margin: 25vh 1.5rem 4rem 1.5rem;
     letter-spacing: 0.2rem;
 }
 
@@ -174,7 +182,14 @@ body {
 }
 
 @media only screen and (min-width: 800px) {
+    .heading {
+        display: inline-block;
+        padding: 0;
+        margin: 25vh auto 1rem auto;
+        letter-spacing: 0.2rem;
+    }
     .flip-container {
+        margin-top: 100px;
         justify-content: space-between;
     }
     .flip {
@@ -184,6 +199,6 @@ body {
         width: 100px;
         text-align: center;
         position: relative;
-        padding: 1.2rem 1.2rem;
+        padding: 1.5rem 1.5rem;
     }
 }
