@@ -71,7 +71,7 @@ body {
     font-size: 1.4rem;
   }
   .text-large {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 }
 
@@ -169,16 +169,16 @@ body {
     letter-spacing: 0.2rem;
   }
   .flip-container {
-    margin-top: 100px;
+    margin-top: 75px;
     justify-content: space-between;
   }
   .flip {
     margin: 0 2rem 0.5rem;
     display: block;
     width: auto;
-    width: 100px;
+    width: 125px;
     text-align: center;
     position: relative;
-    padding: 1.5rem 1.5rem;
+    padding: 2rem 2rem;
   }
 }
