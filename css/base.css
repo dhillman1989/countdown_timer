@@ -71,7 +71,7 @@ body {
     font-size: 1.4rem;
   }
   .text-large {
-    font-size: 4rem;
+    font-size: 5.5rem;
   }
 }
 
@@ -109,7 +109,9 @@ body {
 
 .flip {
   margin: 0.5rem;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 70px;
   text-align: center;
   position: relative;
@@ -174,9 +176,8 @@ body {
   }
   .flip {
     margin: 0 2rem 0.5rem;
-    display: block;
-    width: auto;
-    width: 125px;
+    width: 140px;
+    aspect-ratio: 1;
     text-align: center;
     position: relative;
     padding: 2rem 2rem;
