@@ -3,7 +3,7 @@ const hourCount = document.querySelector('#hour');
 const minCount = document.querySelector('#min');
 const secCount = document.querySelector('#sec');
 
-var date = new Date('Aug 20, 2045 02:46:00').getTime();
+var date = new Date('Aug 20, 2023 02:46:00').getTime();
 
 var myfunc = setInterval(function() {
     var timeNow = new Date().getTime();
