@@ -21,6 +21,7 @@ var myfunc = setInterval(function() {
         var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
     }else{
         getNewDate();
+        myfunc();
     }
 
     dayCount.innerText = days;
