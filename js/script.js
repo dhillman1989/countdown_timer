@@ -6,7 +6,7 @@ const secCount = document.querySelector('#sec');
 var date = new Date('Aug 20, 2023 02:46:00').getTime();
 
 const getNewDate = () => {
-    date = date + 365;
+    date = date + (365 * 1000 * 60* 60*24);
 }
 
 var myfunc = setInterval(function() {
